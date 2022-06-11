@@ -1,0 +1,31 @@
+body {
+    background-color: rgb(236, 250, 255);
+    font-family: 'GowunBatang-Bold';
+}
+.inner {
+    
+    margin: 0 70px;
+}
+#wrap {
+    text-align: center;
+    margin-top: 100px;
+}
+
+.galleryimg {
+    padding: 10px;
+    margin: 10px;
+
+    border-radius: 20px;
+    background-color: rgb(159, 209, 255);
+}
+.galleryimg img{
+    width: 70%;
+    height: auto;
+    margin: 10px;
+}
+.intro {
+    padding: 10px;
+
+    border-radius: 20px;
+    background-color: rgba(255, 255, 255, 0.87);
+}

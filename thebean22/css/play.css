@@ -1,0 +1,48 @@
+body {
+    background-color: rgb(236, 250, 255);
+    font-family: 'GowunBatang-Bold';
+}
+h2 {
+    text-align: center;
+}
+.inner {
+    
+    margin: 0 70px;
+}
+#temp {
+    display: none;
+}
+#section1 {margin-top: 100px;}
+#section1 #ImgSet {position: relative; margin-top: 20px;}
+ 
+#section1 #ImgSet #picSet {width: 800px; height: 540px; position: relative; margin: 0 auto; overflow: hidden;}
+#section1 #ImgSet #picSet img {height: 100%; position: absolute; top: 0; transition: left 1s; text-align: center;}
+ 
+#section1 #ImgSet #dotList {margin-top: 20px; text-align: center;}
+#section1 #ImgSet #dotList li {display: inline-block; width: 20px; height: 20px; background-color: black; color: white; border-radius: 50%; cursor: pointer; margin: 0 15px;}
+#section1 #ImgSet #dotList li:hover {background-color: rgb(199, 230, 255);}
+#section1 #ImgSet #dotList li.active {background-color: rgb(103, 174, 255);}
+ 
+ 
+#section1 #ImgSet dl {
+    position: absolute; 
+    z-index: 1; bottom:-100px; left: 0; 
+    background-color: rgba(0,0,0,0.5); color: white; 
+    width: 100%; transition: all 1s; padding: 20px;
+}
+#section1 #ImgSet dl.active {animation: textMotionIn forwards 1s}
+#picSet dl.activeOut {animation: textMotionOut forwards 1s;}
+ 
+@keyframes textMotionIn {
+    from {bottom:-100px; opacity: 0;}
+    to {bottom:0; opacity: 1;}
+}
+@keyframes textMotionOut {
+    from {bottom:0; opacity: 1;}
+    to {bottom: 20px; opacity: 0;}
+}
+
+/* #picSet #pic0 {left: 0;} 
+#picSet #pic1 {left: 1440px;}
+#picSet #pic2 {left: 2880px;} */
+/* #picSet #pic2 {left: calc(1440px * 2);} */

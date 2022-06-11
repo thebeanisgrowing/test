@@ -1,0 +1,83 @@
+ul {
+    list-style-type: none;
+}
+body {
+    font-family: 'GowunBatang-Bold';
+    font-size: 100%;
+
+    background-color: rgb(236, 250, 255);
+}
+.c1 {width: 8.33%; float: left; }
+.c2 {width: 16.66%; float: left; }
+.c3 {width: 25%; float: left; }
+.c4 {width: 33.33%; float: left; }
+.c5 {width: 41.66%; float: left; }
+.c6 {width: 50%; float: left; }
+.c7 {width: 58.33%; float: left;}
+.c8 {width: 66.66%; float: left; }
+.c9 {width: 75%; float: left; }
+.c10 {width: 83.33%; float: left; }
+.c11 {width: 91.66%; float: left; }
+.c12 {width: 100%; float: left; }
+
+aside {
+    color: #ffffff;
+}
+aside li {
+    padding: 20px;
+    margin: 5px;
+    background-color: #2d51b5;
+    border-radius: 20px;
+}
+aside li:hover {
+    background-color: rgb(105, 193, 252);
+}
+section#main {
+    padding: 15px;
+    border: solid 1px #84a3f7;
+    border-radius: 10px;
+}
+section#main h1 {
+    padding: 10px;
+}
+section#main p {
+    padding: 10px;
+    font-size: 0.95em;
+    line-height: 130%;
+}
+section#main audio {
+    filter: opacity(50%);
+    border: solid 2px rgb(44, 171, 255);
+    border-radius: 30px;
+    width: 400px;
+    height: 40px;
+}
+.inner {
+    margin: 0 70px;
+}
+#wrap {
+    height: 1000px;
+    margin-top: 100px;
+}
+#photo {
+    padding: 10px;
+}
+#photo img{
+    width: 70%;
+    height: auto;
+}
+/* 너비가 768픽셀 이하인 스마트폰 */
+@media only screen and (max-width: 768px) {
+    [class*="c"] {
+        width: 100%;
+    }
+    section#main audio {
+        width: 300px;
+    }
+    #wrap {
+        height: 1200px;
+    }
+    #photo img {
+        width: 100%
+    }
+}

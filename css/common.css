@@ -1,0 +1,70 @@
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+@font-face {
+    font-family: 'Yeongdo-Rg';
+    src: url('https://cdn.jsdelivr.net/gh/projectnoonnu/noonfonts_2202-2@1.0/Yeongdo-Rg.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+}
+@font-face {
+    font-family: 'GowunBatang-Bold';
+    src: url('https://cdn.jsdelivr.net/gh/projectnoonnu/noonfonts_2108@1.1/GowunBatang-Bold.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+}
+a {
+    text-decoration: none;
+}
+#gnbMenu a:hover {
+    color: rgb(241, 255, 180);
+}
+li {
+    list-style: none;
+    margin: 10px;
+}
+header {
+    background-color: rgb(105, 193, 252);
+    height: 80px;
+    width: 100%;
+    position: fixed;
+    top: 0px;
+    transition: top 1s;
+}
+
+header h1, a {
+    color: white;
+}
+
+header h1 {
+    float: left;
+    margin-top: 20px;
+    font-family: 'Yeongdo-Rg';
+}
+
+header #gnbMenu {
+    float: right;
+    margin-top: 20px;
+}
+
+header #gnbMenu li {
+    display: inline-block;
+    font-family: 'Yeongdo-Rg';
+
+}
+footer{
+    width: 100%;
+    margin-top: 20px;
+
+    background-color: rgba(200, 229, 255, 0.659);
+    padding: 30px;
+    border-radius: 10px;
+}
+@media only screen and (max-width: 800px) {
+    header {
+        height: 180px;
+    }
+    
+}

@@ -1,0 +1,105 @@
+body {
+    background-color: rgb(236, 250, 255);
+    font-family: 'GowunBatang-Bold';
+}
+.inner {
+    
+    margin: 0 70px;
+}
+#section1 {
+    margin-top: 30px;
+    padding: 20px;
+    background-color: rgb(215, 240, 250);
+    border-radius: 10%;
+}
+#section2 {
+    border-radius: 5%;
+    margin-top: 30px;
+    padding-top: 20px;
+    padding-bottom: 20px;
+    padding-left: 10px;
+    padding-right: 10px;
+    background-color: rgba(105, 193, 252, 0.747);
+}
+.tag {
+    color: rgba(0, 81, 255, 0.699);
+    font-weight: bold;   
+}
+h2 {
+    font-size: 1.7em;
+}
+#button {
+    background-color: rgba(200, 229, 255, 0.659);
+    color: white;
+    text-align: center;
+
+    width: 100px;
+    padding: 15px;
+    margin-top: 15px;
+    border-radius: 25%;
+
+}
+#button:hover {
+    background-color: rgb(255, 255, 255);
+    color: black;
+}
+#photos {
+    padding: 10px;
+    height: 100px;
+}
+#photos img{
+    width: 100%;
+    height: auto;
+}
+#wrap {
+    margin-top: 100px;
+    height: 800px;
+}
+[class*="c_"] {
+    float: left;
+    padding: 10px;
+}
+/* 너비가 600픽셀 미만인 스마트폰*/
+[class*="c_"] {
+    width: 100%;
+}
+/* 너비가 600픽셀 이상인 태블릿*/
+@media only screen and (min-width: 600px) {
+    .c_m_1 {width: 8.33%;}
+    .c_m_2 {width: 16.66%;}
+    .c_m_3 {width: 25%;}
+    .c_m_4 {width: 33.33%;}
+    .c_m_5 {width: 41.66%;}
+    .c_m_6 {width: 50%;}
+    .c_m_7 {width: 58.33%;}
+    .c_m_8 {width: 66.66%;}
+    .c_m_9 {width: 75%;}
+    .c_m_10 {width: 83.33%;}
+    .c_m_11 {width: 91.66%;}
+    .c_m_12 {width: 100%;}
+}
+/* 너비가 768픽셀 이상인 데스크톱 컴퓨터, 노트북 등 */
+@media only screen and (min-width: 768px) {
+    .c_1 {width: 8.33%;}
+    .c_2 {width: 16.66%;}
+    .c_3 {width: 25%;}
+    .c_4 {width: 33.33%;}
+    .c_5 {width: 41.66%;}
+    .c_6 {width: 50%;}
+    .c_7 {width: 58.33%;}
+    .c_8 {width: 66.66%;}
+    .c_9 {width: 75%;}
+    .c_10 {width: 83.33%;}
+    .c_11 {width: 91.66%;}
+    .c_12 {width: 100%;}
+}
+@media only screen and (max-width: 800px) {
+    .inner {
+        margin: 0 20px;
+    }
+}
+@media only screen and (max-width: 900px) {
+    #wrap {
+        height: 1700px;
+    }
+}
